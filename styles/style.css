@@ -1,0 +1,171 @@
+:root {
+  --violet: #5f2c82;
+  --rose: #ec4899;
+  --gradient: linear-gradient(135deg, #5f2c82, #ec4899);
+}
+
+body {
+  font-family: 'Cookie', cursive;
+  font-size: 1.2rem; /* base plus grande */
+  line-height: 1.8;
+  background: var(--gradient);
+  transition: 0.4s;
+}
+
+section {
+  background: white;
+  border-radius: 30px;
+  margin: 70px 20px;
+  padding: 60px 30px;
+}
+
+.navbar, footer {
+  background: var(--gradient);
+}
+
+.nav-link, .navbar-brand {
+  color: white !important;
+}
+
+.card, .btn, input, textarea, .modal-content {
+  border-radius: 20px !important;
+}
+
+.badge {
+  background: var(--gradient);
+  color: white;
+  padding: 10px 14px;
+  margin: 5px;
+}
+
+.skills-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#home {
+  background: var(--gradient);
+  color: white;
+}
+
+.contact-form {
+  background: var(--gradient);
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+}
+
+.contact-form .btn {
+  background: white;
+  color: var(--violet);
+  font-weight: bold;
+}
+
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode section {
+  background: #1e1e1e;
+}
+
+.dark-mode .skills-box {
+  background: #2a2a2a;
+}
+
+.dark-mode .contact-form {
+  background: linear-gradient(135deg, #2b1055, #6b1d5c);
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.animate.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.7s ease;
+}
+
+.dark-mode .modal-content {
+  background: white;
+  color: #212529;
+}
+
+.dark-mode .modal-content h5,
+.dark-mode .modal-content p {
+  color: #212529;
+}
+
+footer {
+  background: var(--gradient);
+  color: white;
+  border-radius: 30px 30px 0 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+}
+
+.social-links i {
+  font-size: 3rem;
+  margin: 0 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+body:not(.dark-mode) .social-links i {
+  color: #212529; 
+}
+
+body.dark-mode .social-links i {
+  color: white;
+}
+
+.social-links i:hover {
+  transform: scale(1.2);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.btn {
+  font-size: 1.2rem;
+}

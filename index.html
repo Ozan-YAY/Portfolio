@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio – Ozan YAY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">MonPortfolio</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button id="darkModeToggle" class="btn btn-light btn-sm ms-2">
+      <i class="bi bi-moon-fill"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mt-3 mt-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="vh-100 d-flex align-items-center animate">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+
+      <div class="col-md-4 text-center mb-4">
+        <img src="images/Photo_Profil.jpg" class="img-fluid rounded-circle shadow-lg" width="220">
+      </div>
+
+      <div class="col-md-8">
+        <h1 class="fw-bold">Ozan YAY</h1>
+        <p class="lead">Étudiant en Licence 2 Informatique (DANT)</p>
+        <p>
+          Recherche de Stage en Développement Application/Logiciel/Web, Data (Mi Janvier 2026).
+          Passionné par le développement web et applicatin.
+        </p>
+        <a href="pdf/CV_OzanYAY.pdf" class="btn btn-light mt-3" download>
+          <i class="bi bi-download"></i> Télécharger mon CV
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="animate">
+  <div class="container">
+    <h2 class="text-center mb-5">Projets</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Web</h5>
+            <p class="card-text">Site web personnel responsive</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal">
+              Voir détails
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="projectModal">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Portfolio Web</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Date :</strong> 2025</p>
+        <p><strong>Technologies :</strong> HTML, CSS, Bootstrap, JavaScript</p>
+        <p>
+          Projet universitaire visant à concevoir un portfolio entièrement responsive,
+          avec une identité visuelle moderne et une bonne expérience utilisateur.
+        </p>
+        <a href="#" class="btn btn-dark">
+          <i class="bi bi-github"></i> Voir le code
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="skills" class="animate">
+  <div class="container">
+    <h2 class="text-center mb-5">Compétences techniques</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <h5>Développement Web</h5>
+        <div class="skills-box">
+          <span class="badge"><i class="bi bi-filetype-html"></i> HTML</span>
+          <span class="badge"><i class="bi bi-filetype-css"></i> CSS</span>
+          <span class="badge"><i class="bi bi-filetype-js"></i> JavaScript</span>
+          <span class="badge"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+          <span class="badge"><i class="bi bi-filetype-php"></i> PHP</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Programmation & Bases de données</h5>
+        <div class="skills-box">
+          <span class="badge"><i class="bi bi-cpu"></i> C</span>
+          <span class="badge"><i class="bi bi-code-square"></i> Python</span>
+          <span class="badge"><i class="bi bi-database"></i> MySQL</span>
+          <span class="badge"><i class="bi bi-diagram-3"></i> Assembleur MIPS</span>
+        </div>
+      </div>
+
+      <div class="col-md-12 mt-4">
+        <h5>Outils, Systèmes & Scripting</h5>
+        <div class="skills-box">
+          <span class="badge"><i class="bi bi-git"></i> Git / GitHub</span>
+          <span class="badge"><i class="bi bi-windows"></i> Windows</span>
+          <span class="badge"><i class="bi bi-terminal"></i> Linux</span>
+          <span class="badge"><i class="bi bi-terminal-fill"></i> Bash</span>
+          <span class="badge"><i class="bi bi-google"></i> Google Workspace</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="animate">
+  <div class="container">
+    <h2 class="text-center mb-4">À propos de moi</h2>
+    <p>
+      Etudiant en L2 informatique en apprentissage (filière DANT) à Sorbonne Université, je suis passioné par l'informatique de tous les domaines mais particulièrement par le dévelopemment web ou développement application.
+    </p>
+    <p>
+      Mes études me permettent d'acquérir des bases en informatique (plus de détails dans la section formations) et 
+      mes expériences professionnelles que j'ai pu avoir m'ont apprises des compétences interpersonnelles importantes au travail en entreprise (plus de détails dans la section expérience).
+      Etant en études d'informatique en apprentissage, je cherche un stage à partir du 18 Janvier 2026.
+    </p>
+    <p>
+      Etant en L2 d'informatique en apprentissage, je recherche donc un stage en développement application/logiciel/web pour mi Janvier 2026.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="animate">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact</h2>
+
+    <form id="contactForm" class="contact-form col-md-7 mx-auto">
+      <input type="text" id="name" class="form-control mb-3" placeholder="Nom" required>
+      <input type="email" id="email" class="form-control mb-3" placeholder="Email" required>
+      <textarea id="message" class="form-control mb-3" placeholder="Message" required></textarea>
+
+      <button type="submit" class="btn btn-lg w-100">
+        <i class="bi bi-send"></i> Envoyer
+      </button>
+
+      <p id="formMessage" class="text-center mt-3 fw-bold"></p>
+    </form>
+
+    <div class="text-center mt-5 social-links">
+      <p class="fw-bold">Retrouvez-moi sur :</p>
+
+      <a href="https://github.com/Ozan-YAY" target="_blank" aria-label="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/ozan-yay" target="_blank" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-5">
+  <div class="container py-4">
+    <div class="row text-center text-md-start">
+
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">Informations légales</h6>
+        <p class="small mb-0">
+          Portfolio réalisé dans le cadre d’un projet universitaire.<br>
+          Contenus non commerciaux.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">Navigation</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h6 class="fw-bold">© Copyright</h6>
+        <p class="small mb-0">© 2025 Ozan YAY – Tous droits réservés</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/javascript.js"></script>
+</body>
+</html>
